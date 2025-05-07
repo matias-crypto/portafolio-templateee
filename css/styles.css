@@ -10,14 +10,11 @@
     --project-text: #d1d1d1;
 }
 
-/* --- Base --- */
 body {
     background-color: var(--discord-dark);
     color: var(--discord-text);
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,7 +22,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-/* --- Navbar --- */
 .navbar {
     background-color: var(--discord-darker);
     border-bottom: 1px solid var(--discord-darkest);
@@ -64,7 +60,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
-/* --- Botones --- */
 .btn-primary {
     background-color: var(--discord-accent);
     border: none;
@@ -88,54 +83,6 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--discord-accent);
 }
 
-/* --- Hero Section --- */
-#hero {
-    background: linear-gradient(135deg, var(--discord-darkest) 0%, var(--discord-darker) 100%);
-    padding: 120px 0;
-    text-align: left;
-}
-
-.hero-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.hero-text {
-    max-width: 600px;
-}
-
-.hero-image {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid var(--discord-accent);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-/* --- Secciones --- */
-.section-title {
-    color: var(--discord-light-text);
-    position: relative;
-    padding-bottom: 15px;
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 80px;
-    height: 4px;
-    background-color: var(--discord-accent);
-    border-radius: 2px;
-}
-
-/* --- Cards --- */
 .card {
     background-color: var(--discord-darker);
     border: 1px solid var(--discord-darkest);
@@ -158,7 +105,50 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--project-text) !important;
 }
 
-/* --- Habilidades --- */
+.section-title {
+    color: var(--discord-light-text);
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background-color: var(--discord-accent);
+    border-radius: 2px;
+}
+
+#hero {
+    background: linear-gradient(135deg, var(--discord-darkest) 0%, var(--discord-darker) 100%);
+    padding: 120px 0;
+    text-align: left;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--discord-accent);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
 .skill-badge {
     background-color: var(--discord-darkest);
     color: var(--discord-text);
@@ -176,7 +166,6 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.05);
 }
 
-/* --- Footer --- */
 footer {
     background-color: var(--discord-darkest);
     padding: 40px 0;
@@ -194,7 +183,6 @@ footer {
     transform: translateY(-3px);
 }
 
-/* --- Tags --- */
 .project-tag {
     background-color: var(--discord-darkest);
     color: var(--discord-text);
@@ -206,7 +194,6 @@ footer {
     display: inline-block;
 }
 
-/* --- Features --- */
 .feature-card {
     padding: 30px;
     border-radius: 10px;
@@ -224,7 +211,6 @@ footer {
     color: var(--discord-accent);
 }
 
-/* --- Contacto --- */
 .contact-info {
     margin-bottom: 30px;
 }
@@ -235,7 +221,6 @@ footer {
     font-size: 1.2rem;
 }
 
-/* --- Timeline --- */
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -325,7 +310,6 @@ footer {
     font-weight: bold;
 }
 
-/* --- Responsive --- */
 @media (max-width: 992px) {
     .hero-content {
         flex-direction: column;
@@ -366,4 +350,4 @@ footer {
     .right {
         left: 0%;
     }
-}
+  }
